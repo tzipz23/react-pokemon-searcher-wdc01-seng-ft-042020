@@ -18,8 +18,11 @@ class PokemonCard extends React.Component {
     })
   }
   pokeFlip = () => {
-    if (this.state.showingFront){this.setState({ picture:this.props.pokeCard.sprites.back,
-      showingFront: false})}else{
+    console.log(this.state.showingFront)
+    if (this.state.showingFront)
+    {this.setState({ picture:this.props.pokeCard.sprites.back,
+      showingFront: false})
+    }else{
         this.setState({ picture:this.props.pokeCard.sprites.front,
           showingFront: true})
       }
